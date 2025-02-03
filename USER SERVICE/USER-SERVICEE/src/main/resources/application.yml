@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      filter:
+        - name: ReqeustRateLimiter
+          args:
+            redis-rate-limiter-enabled=true
+            redis-rate-limiter-replenishRate=10
+            redis-rate-limiter-burstCapacity=20
+            redis-rate-limiter-time-window=10s
+        - name: ReqeustTimeout
+          args:
+           timeout:1000						
