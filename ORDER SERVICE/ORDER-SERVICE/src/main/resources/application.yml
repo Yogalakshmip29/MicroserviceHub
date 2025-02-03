@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: payment-service
+          uri: lb://payment-service
+          predicates:
+           - Path: http://localhost:2345/api/**
+          filters:
+            - name: ReqeustTimeout
+              args:
+               readTimeout:1000m
+               connectTimeout:2000m
+
+resilience4j:
+   retry:
+     instances:
+       OrderFailure:
+         maxAttempts: 3
+         waitDuration: 8000ms
+         retryExceptions:
+           - java.io.IOException
+         ignoreExceptions:
+           - java.net.SocketTimeoutException
