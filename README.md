@@ -7,6 +7,5 @@
 6. **Spring Security with JWT** (Authentication & Authorization)
 7. **Resilience4j** (Circuit Breaker, Retry, and RateLimiter)
 8. **Spring Data JPA** (Database Integration with PostgreSQL/MySQL)
-9. **Docker & Kubernetes** (Containerization & Orchestration)
-10. **Logging & Monitoring** (Logback, Zipkin, Prometheus, Actuator)
-11. **Testing** (JUnit, Mockito, Integration Tests, API Testing)
+9. **Logging & Monitoring** (Logback, Actuator)
+10. **Testing** (JUnit, Mockito, Integration Tests, API Testing)
