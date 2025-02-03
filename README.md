@@ -1,1 +1,12 @@
 # MicroserviceHub
+1. **Eureka Server** (Service Discovery)
+2. **Spring Cloud Gateway** (API Gateway for routing)
+3. **User Service** (Handles user-related operations with CRUD and JWT authentication)
+4. **Order Service** (Handles orders with database integration and resilience features)
+5. **Payment Service** (Handles payments with logging and monitoring)
+6. **Spring Security with JWT** (Authentication & Authorization)
+7. **Resilience4j** (Circuit Breaker, Retry, and RateLimiter)
+8. **Spring Data JPA** (Database Integration with PostgreSQL/MySQL)
+9. **Docker & Kubernetes** (Containerization & Orchestration)
+10. **Logging & Monitoring** (Logback, Zipkin, Prometheus, Actuator)
+11. **Testing** (JUnit, Mockito, Integration Tests, API Testing)
