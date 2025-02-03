@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes: 
+        - id: ORDER-SERVICE
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=http://localhost:1234/orderService/**
+        - id: PAYMENT-SERVICE
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path=http://localhost:2345/api/**
