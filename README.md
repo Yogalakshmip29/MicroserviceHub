@@ -8,4 +8,4 @@
 7. **Resilience4j** (Circuit Breaker, Retry, and RateLimiter)
 8. **Spring Data JPA** (Database Integration with PostgreSQL/MySQL)
 9. **Logging & Monitoring** (Logback, Actuator)
-10. **Testing** (JUnit, Mockito, Integration Tests, API Testing)
+10. **Testing** (JUnit, Mockito, ServiceLayer Testing, API Testing)
